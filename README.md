@@ -1,8 +1,7 @@
 # Why using jquery in react😂?
 
-Just for old-expreance using in morden workflow
-
-For example:
+Just for old-expreance using in morden workflow <br>
+For example:<br>
 
 ### Javascript Easing
 
@@ -32,16 +31,16 @@ $({ opacity: 0, bkd: 0 }).animate(
 //Using throw this kind of "last century" code could allows u to do some RELLY quike codeing
 ```
 
-In `animate()` function, I had put easing plugin inside, can using easing functions by animate() straightaway.
-Easing plugin comes from:
-`https://github.com/gdsmith/jquery.easing`
-Easing plugin usage:
-`https://www.cnblogs.com/yangpeixian/p/10919817.html`
+In `animate()` function, I had put easing plugin inside, can using easing functions by animate() straightaway. <br>
+Easing plugin comes from: <br>
+`https://github.com/gdsmith/jquery.easing` <br>
+Easing plugin usage: <br>
+`https://www.cnblogs.com/yangpeixian/p/10919817.html`<br>
 
 # jQuery usage
 
-Jquery allows u to do more magic code
-`https://api.jquery.com/`
+Jquery allows u to do more magic code <br>
+`https://api.jquery.com/`<br>
 
 # @bobliao/use-jquery-hook
 
@@ -70,4 +69,22 @@ import useJquery, { jQueryObject, isRunningInServer } from '@bobliao/use-jquery-
 
 (...)
 
+```
+
+# SSR Suppored
+
+This hook could run in SSR project without any `window undefined ERROR`.<br>
+Even can determine the code is running in server side or client side,throw this:<br>
+
+```javascript
+import useJquery, {
+  jQueryObject,
+  isRunningInServer,
+} from '@bobliao/use-jquery-hook';
+
+if (isRunningInServer) {
+  //running in server
+} else {
+  //running in client
+}
 ```
