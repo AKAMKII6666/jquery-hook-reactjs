@@ -93,7 +93,7 @@ if (isRunningInServer) {
 
 ===
 
-# 中文 -Chanese-
+# 中文 -Chinese-
 
 # 为什么在 react 里用 jquery😂?
 
