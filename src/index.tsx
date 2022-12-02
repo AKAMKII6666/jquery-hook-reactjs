@@ -3,7 +3,7 @@ import jQuery from 'jquery';
 let isRunningInServer: boolean = false;
 try {
   var w = window;
-  console.log(w);
+  w.location;
 } catch (_e) {
   isRunningInServer = true;
 }
